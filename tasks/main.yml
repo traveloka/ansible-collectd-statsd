@@ -1,0 +1,14 @@
+---
+# tasks file for collectd_statsd
+- block:
+    - name: copy statsd plugin configuration
+      template:
+        src: statsd.conf.j2
+        dest: "/etc/collectd/collectd.conf.d/statsd.conf"
+        owner: root
+        group: root
+        mode: 0644
+      notify: restart collectd
+  become: yes
+  tags:
+    - collectd_statsd

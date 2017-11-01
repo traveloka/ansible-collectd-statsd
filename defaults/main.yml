@@ -1,0 +1,4 @@
+---
+# defaults file for collectd_statsd
+
+collectd_statsd_port: "8125"

@@ -1,0 +1,11 @@
+---
+galaxy_info:
+  description: setup statsd plugin
+  company: Traveloka
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+  categories:
+    - monitoring
+dependencies: []

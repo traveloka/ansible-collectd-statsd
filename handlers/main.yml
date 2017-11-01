@@ -1,0 +1,10 @@
+---
+# handlers file for collectd_statsd
+
+- name: restart collectd
+  become: yes
+  service:
+    name: collectd
+    state: restarted
+  tags:
+    - collectd_statsd

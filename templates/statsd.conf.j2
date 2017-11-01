@@ -1,0 +1,12 @@
+LoadPlugin "statsd"
+<Plugin statsd>
+  Host "127.0.0.1"
+  Port "{{ collectd_statsd_port }}"
+  DeleteSets      true
+  DeleteCounters  true
+  DeleteGauges    true
+  TimerLower      true
+  TimerUpper      true
+  TimerCount      true
+  TimerPercentile 90.0
+</Plugin>

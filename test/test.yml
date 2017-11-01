@@ -1,0 +1,7 @@
+---
+- hosts: all
+  vars:
+    apt_cache_validity_time: 3600
+  roles:
+    - role: apt_sources_list
+    - role: ansible-collectd-statsd
